@@ -26,6 +26,8 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
+root_doc = "docs/index"
+
 source_suffix = {
     ".rst": "restructuredtext",
     ".md": "markdown",
