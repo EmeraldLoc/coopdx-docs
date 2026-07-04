@@ -1,5 +1,3 @@
-## [:rewind: C Reference](../c.md)
-
 # Config File
 
 The configuration file is where all of the user's settings are stored. It's a decently easy to use system that allows you to add entries to the config file and use it with ease.

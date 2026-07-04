@@ -1,5 +1,3 @@
-## [:rewind: Lua Reference](../lua.md)
-
 # Every Behavior's Object List
 
 | Behavior | Object List |

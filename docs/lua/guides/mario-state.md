@@ -1,6 +1,4 @@
-## [:rewind: Lua Reference](../lua.md)
-
-# How to use `gMarioStates`
+# Using `gMarioStates`
 
 ## Section 1: What is `gMarioStates`?
 

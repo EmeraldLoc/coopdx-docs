@@ -1,5 +1,3 @@
-## [:rewind: C Reference](../c.md)
-
 # SMLua
 
 SMLua is what allows Lua to communicate with SM64. It's the backbone of the modding API, and it contains multiple features that makes development in C convenient.

@@ -1,7 +1,7 @@
-# Welcome to the sm64coopdx documentation!
+# Getting Started
 
-**sm64coopdx** is an online multiplayer project for the Super Mario 64 PC port that synchronizes all entities and every level for multiple players. The project was started by the Coop Deluxe Team. The purpose is to actively maintain and improve, but also continue sm64ex-coop, created by djoslin0. More features, customization, and power to the Lua API allow modders and players to enjoy Super Mario 64 more than ever!
+If you're looking to make mods, take a look at the [Lua documentation](lua/lua.md). If you are looking to contribute to sm64coopdx, take a look at the [C documentation](c/c.md).
 
-## Where to look
+!!! note
 
-If you're looking to make mods, take a look at the [Lua documentation](docs/lua/lua.md). If you are looking to contribute to sm64coopdx, take a look at the [C documentation](docs/c/c.md).
+    If at any point you have a question, feel free to ask in the [Discord server](https://discord.gg/TJVKHS4).

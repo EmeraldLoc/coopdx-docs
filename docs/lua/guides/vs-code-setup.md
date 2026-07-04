@@ -1,4 +1,4 @@
-## [:rewind: Lua Reference](../lua.md)
+# Setting up Visual Studio Code
 
 Setting up Visual Studio Code will allow you to have all of the modern benefits of IDEs like autocomplete.
 
@@ -39,19 +39,21 @@ Setting up Visual Studio Code will allow you to have all of the modern benefits 
 
 ---
 
-Note: For your custom functions you will need to provide type definitions to get autocomplete.
+!!! important
 
-For instance, this will not autocomplete for the mario struct:
-```
-function mario_update(m)
-    -- code here
-end
-```
+    For your custom functions you will need to provide type definitions to get autocomplete.
 
-But this will autocomplete for the mario struct:
-```
---- @param m MarioState
-function mario_update(m)
-    -- code here
-end
-```
+    For instance, this will not autocomplete for the mario struct:
+    ```lua
+    function mario_update(m)
+        -- code here
+    end
+    ```
+
+    But this will autocomplete for the mario struct:
+    ```lua
+    --- @param m MarioState
+    function mario_update(m)
+        -- code here
+    end
+    ```

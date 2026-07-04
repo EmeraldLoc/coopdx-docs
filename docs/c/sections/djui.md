@@ -1,5 +1,3 @@
-## [:rewind: C Reference](../c.md)
-
 # DJUI
 
 DJUI, or djoslin0 User Interface, is a custom UI framework for making panels, buttons, and other elements easy to work with.

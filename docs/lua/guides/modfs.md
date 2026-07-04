@@ -1,5 +1,3 @@
-## [:rewind: Lua Reference](../lua.md)
-
 # ModFS
 
 `ModFS` enables a small, sandboxed file system for mods. It allows to store and retrieve binary and text files, no matter their content.<br>
