@@ -3,18 +3,18 @@
 `ModFS` enables a small, sandboxed file system for mods. It allows to store and retrieve binary and text files, no matter their content.<br>
 Each mod has its own file system, and can allow other mods to read its files.
 
-<br>
-
 ## Specs
 
 ### File system
 
 Each ModFS file system:
+
 - Has a maximum size of **32 MB** (`MOD_FS_MAX_SIZE`). Files can be any size, as long as the cumulative sum of file sizes doesn't exceed this limit.
 - Can store at most **512 files** (`MOD_FS_MAX_FILES`).
 - Is stored on disk as a `.modfs` file, which is a ZIP file, containing all files written in it.
 
 The ModFS files are located in the `sav` directory at the usual save file location:
+
 - Windows: `%appdata%/sm64coopdx`
 - Linux: `~/.local/share/sm64coopdx`
 - MacOS: `~/Library/Application Support/sm64coopdx`
@@ -33,8 +33,6 @@ The ModFS files are located in the `sav` directory at the usual save file locati
     - textures: `.tex`, `.png`
     - levels: `.lvl`
     - audio: `.m64`, `.aiff`, `.mp3`, `.ogg`
-
-<br>
 
 ## [`ModFs`](../structs.md#ModFs)
 
@@ -76,8 +74,6 @@ Methods can be called in Lua with the colon `:` character:
 ```lua
 print("The first file of ModFS " .. modFs.modPath .. " is named " .. modFs:get_filename(0) .. ".")
 ```
-
-<br>
 
 ## [`ModFsFile`](../structs.md#ModFsFile)
 
@@ -132,16 +128,12 @@ file:erase(file.size)
 print("The ModFS file " .. file.filepath .. " is now empty.")
 ```
 
-<br>
-
 ## Error handling
 
 All errors coming from ModFS functions are not blocking. However, they appear in the console and raise the "Mod has script errors" message.
 
 - The function [`mod_fs_hide_errors`](../functions-5.md#mod_fs_hide_errors) can suppress the ModFS errors from the console.
 - Use the function [`mod_fs_get_last_error`](../functions-5.md#mod_fs_get_last_error) to retrieve the last error raised by ModFS. This function always return an error message if an error occurred, even if errors are hidden.
-
-<br>
 
 ## Usage with other sm64coopdx features
 
@@ -189,8 +181,6 @@ local custom_sample_uri = string.format(MOD_FS_URI_FORMAT, modFs.modPath, "custo
 local custom_sample = audio_sample_load(custom_sample_uri)
 ```
 
-<br>
-
 ## Good practices
 
 ### Always valid `ModFs` object
@@ -200,8 +190,6 @@ Use the following piece of code to always retrieve a valid `ModFs` object:
 local modFs = mod_fs_get() or mod_fs_create()
 ```
 If the ModFS for the current mod doesn't exist, it will create one.
-
-<br>
 
 ### Always valid `ModFsFile` object
 
@@ -216,8 +204,6 @@ To make sure the file is empty when requested, add the following line to clear t
 file:erase(file.size)
 ```
 
-<br>
-
 ### Correctly initialize a file
 
 The `get_file` method of a `ModFs` object opens a file only if the file is not loaded yet. Subsequent calls with the same filename will return the file handle without resetting its offset or mode.<br>
@@ -227,8 +213,6 @@ local file = modFs:get_file("myfile.txt")
 file:set_text_mode(true) -- Set mode to text
 file:rewind() -- Reset offset to the beginning of the file
 ```
-
-<br>
 
 ### Methods over functions
 
@@ -249,8 +233,6 @@ mod_fs_file_write_string(file, "some text")
 file:write_string("some text")
 ```
 
-<br>
-
 ### Handle possible failures
 
 In addition to error messages that can be retrieved with [`mod_fs_get_last_error`](../functions-5.md#mod_fs_get_last_error), almost all ModFS functions have a boolean return value indicating if the function succeeded or failed.
@@ -260,8 +242,6 @@ if not modFs:delete_file("somefile") then
 end
 ```
 
-<br>
-
 ### Don't forget to save
 
 ModFS are not saved automatically when writing to files.<br>
@@ -269,8 +249,6 @@ The mod has to explicitly call the method `save` to save its ModFS on the disk.
 ```lua
 modFs:save()
 ```
-
-<br>
 
 ## Compression
 

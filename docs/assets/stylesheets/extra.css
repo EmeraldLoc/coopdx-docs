@@ -1,0 +1,37 @@
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #1b1f31;
+    --md-default-bg-color--light: #212a55;
+    --md-accent-fg-color: #63b265;
+    --md-accent-fg-color--transparent: #63b26511;
+}
+
+.md-search__button::after {
+    content: none;
+}
+
+[data-platform^="Mac"] .md-search__button::after {
+    content: none;
+}
+
+.md-nav--primary .md-nav__item .md-nav__link--active {
+    background: var(--md-accent-fg-color--transparent);
+    color: var(--md-accent-fg-color);
+}
+
+.md-search__button {
+    background-color: var(--md-default-bg-color);
+    border-radius: 5px;
+}
+
+.md-footer {
+    background-color: #262059;
+}
+
+.md-footer-meta {
+    background-color: #1e1946;
+}
+
+.md-top {
+    background-color: var(--md-default-bg-color--light);
+    border-radius: 10px;
+}

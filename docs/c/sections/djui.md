@@ -1,6 +1,6 @@
 # DJUI
 
-DJUI, or djoslin0 User Interface, is a custom UI framework for making panels, buttons, and other elements easy to work with.
+DJUI, or djoslin0's User Interface, is a custom UI framework for making panels, buttons, and other elements easy to work with.
 
 ## How it works
 

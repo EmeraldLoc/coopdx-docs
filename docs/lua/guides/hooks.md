@@ -13,8 +13,6 @@ Hooks are a way for SM64 to trigger Lua code, whereas the functions listed in [f
 - [hook_mod_menu_slider](#hook_mod_menu_slider)
 - [hook_mod_menu_inputbox](#hook_mod_menu_inputbox)
 
-<br />
-
 ## [hook_behavior](#hook_behavior)
 `hook_behavior()` allows Lua mods to override existing behaviors or create new ones.
 
@@ -47,11 +45,7 @@ end
 id_bhvExample = hook_behavior(nil, OBJ_LIST_DEFAULT, true, bhv_example_init, bhv_example_loop, "bhvExample")
 ```
 
-[:arrow_up_small:](#)
-
-<br />
-
-## [hook_chat_command](#hook_chat_command)
+## `hook_chat_command`
 `hook_chat_command()` allows Lua mods to react and respond to chat commands. Chat commands start with the `/` character. The function the mod passes to the hook should return `true` when the command was valid and `false` otherwise.
 
 ### Parameters
@@ -78,10 +72,6 @@ end
 
 hook_chat_command("test", "[on|off] turn test on or off", on_hide_and_seek_command)
 ```
-
-[:arrow_up_small:](#)
-
-<br />
 
 ## [hook_event](#hook_event)
 
@@ -177,10 +167,6 @@ end
 hook_event(HOOK_MARIO_UPDATE, mario_update)
 ```
 
-[:arrow_up_small:](#)
-
-<br />
-
 ## [hook_mario_action](#hook_mario_action)
 `hook_mario_action()` allows Lua mods to create new actions or override existing ones.
 
@@ -261,10 +247,6 @@ hook_event(HOOK_ON_SET_MARIO_ACTION, mario_on_set_action)
 hook_mario_action(ACT_WALL_SLIDE, { every_frame = act_wall_slide, gravity = act_wall_slide_gravity } )
 ```
 
-[:arrow_up_small:](#)
-
-<br />
-
 ## [hook_on_sync_table_change](#hook_on_sync_table_change)
 `hook_on_sync_table_change()` allows Lua mods to react to sync table changes.
  - `syncTable` parameter must be a sync table, e.g. [gGlobalSyncTable](../globals.md#gGlobalSyncTable), [gPlayerSyncTable[]](../globals.md#gPlayerSyncTable), or one of their child tables.
@@ -297,10 +279,6 @@ hook_on_sync_table_change(gGlobalSyncTable, "testingField", "tag", on_testing_fi
 gGlobalSyncTable.testingField = "hello"
 ```
 
-[:arrow_up_small:](#)
-
-<br />
-
 ## [hook_mod_menu_text](#hook_mod_menu_text)
 `hook_mod_menu_text()` allows Lua to add text labels to their designated mod menu submenu.
 
@@ -315,10 +293,6 @@ gGlobalSyncTable.testingField = "hello"
 ```lua
 hook_mod_menu_text("Rise and shine, Mr. Freeman.")
 ```
-
-[:arrow_up_small:](#)
-
-<br />
 
 ## [hook_mod_menu_button](#hook_mod_menu_button)
 `hook_mod_menu_button()` allows Lua to add buttons to their designated mod menu submenu.
@@ -352,10 +326,6 @@ hook_mod_menu_button("Open Menu 1", on_open_menu)
 hook_mod_menu_button("Open Menu 2", on_open_menu)
 ```
 
-[:arrow_up_small:](#)
-
-<br />
-
 ## [hook_mod_menu_checkbox](#hook_mod_menu_checkbox)
 `hook_mod_menu_checkbox()` allows Lua to add checkboxes to their designated mod menu submenu.
 
@@ -388,10 +358,6 @@ hook_mod_menu_checkbox("Fly Mode", false, on_set_player_mode)
 hook_mod_menu_checkbox("Noclip Mode", false, on_set_player_mode)
 ```
 
-[:arrow_up_small:](#)
-
-<br />
-
 ## [hook_mod_menu_slider](#hook_mod_menu_slider)
 `hook_mod_menu_slider()` allows Lua to add sliders to their designated mod menu submenu.
 
@@ -416,10 +382,6 @@ end
 
 hook_mod_menu_slider("Time Scale", 1, 0, 10, on_set_time_scale)
 ```
-
-[:arrow_up_small:](#)
-
-<br />
 
 ## [hook_mod_menu_inputbox](#hook_mod_menu_inputbox)
 `hook_mod_menu_inputbox()` allows Lua to add textboxes to their designated mod menu submenu.

@@ -28,6 +28,8 @@ site_author = "The sm64coopdx organization"
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
 site_url = "https://coopdx-docs.readthedocs.io/"
+repo_url = "https://github.com/coop-deluxe/sm64coopdx"
+reop_name = "coop-deluxe/sm64coopdx"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
@@ -44,6 +46,9 @@ copyright = ""
 # Read more: https://zensical.org/docs/setup/navigation/
 # nav = [
 #   "index.md",
+#   {"C Documentation" = [
+#     "c/c.md"
+#   ]},
 # ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -54,7 +59,7 @@ copyright = ""
 #
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
-#extra_css = ["assets/stylesheets/extra.css"]
+extra_css = ["assets/stylesheets/extra.css"]
 
 # With the `extra_javascript` option you can add your own JavaScript to your
 # project to customize the behavior according to your needs.
@@ -62,7 +67,7 @@ copyright = ""
 # The path provided should be relative to the "docs_dir".
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
-extra_javascript = ["assets/javascript/readthedocs.js"]
+# extra_javascript = ["assets/javascript/readthedocs.js"]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -80,7 +85,7 @@ extra_javascript = ["assets/javascript/readthedocs.js"]
 # Read more:
 # - https://zensical.org/docs/customization/#extending-the-theme
 #
-#custom_dir = "overrides"
+#custom_dir = "assets/theme_overrides/"
 
 # With the "favicon" option you can set your own image to use as the icon
 # browsers will use in the browser title bar or tab bar. The path provided
@@ -90,7 +95,9 @@ extra_javascript = ["assets/javascript/readthedocs.js"]
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "assets/images/favicon.png"
+favicon = "assets/images/lgoo.ico"
+
+logo = "assets/images/logo.ico"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -255,14 +262,7 @@ features = [
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
 [[project.theme.palette]]
-scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
-
-[[project.theme.palette]]
 scheme = "slate"
-toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
@@ -289,16 +289,22 @@ toggle.name = "Switch to light mode"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
-#[project.theme.icon]
-#logo = "lucide/smile"
-#repo = "lucide/smile"
+[project.theme.icon]
+repo = "fontawesome/brands/github"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+[project.extra]
+#generator = false
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/coop-deluxe/sm64coopdx"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/discord"
+link = "https://discord.gg/TJVKHS4"
 
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.pymdownx.details]
