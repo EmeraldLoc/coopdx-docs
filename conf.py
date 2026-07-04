@@ -42,4 +42,4 @@ epub_show_urls = 'footnote'
 
 # -- Options for MyST
 
-myst_commonmark_only = true
+myst_commonmark_only = True
