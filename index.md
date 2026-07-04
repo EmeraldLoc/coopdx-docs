@@ -4,4 +4,4 @@
 
 ## Where to look
 
-If you're looking to make mods, take a look at the [Lua documentation](lua/lua.md). If you are looking to contribute to sm64coopdx, take a look at the [C documentation](c/c.md).
+If you're looking to make mods, take a look at the [Lua documentation](docs/lua/lua.md). If you are looking to contribute to sm64coopdx, take a look at the [C documentation](docs/c/c.md).
