@@ -41,31 +41,5 @@ The `globalIndex` of each player is consistent among everyone connected. So if y
 
 All of this is a holdover from when there were only two players. It was a reasonable idea back then.
 
-## Example Lua mods (small)
-- [Low Gravity](examples/low-gravity.lua)
-- [Faster Swimming](../../mods/faster-swimming.lua)
-- [Mario Run](examples/Mario-Run.lua)
-- [HUD Rendering](examples/hud.lua)
-- [Object Spawning](examples/spawn-stuff.lua)
-- [Custom Ball Behavior](examples/behavior-ball.lua)
-- [Replace Goomba Behavior](examples/behavior-replace-goomba.lua)
-- [Add to Goomba Behavior](examples/behavior-add-to-goomba.lua)
-- [Behavior with Surface Collisions](examples/behavior-surface-collisions.lua)
-- [Custom Surface Collisions](examples/big-paddle)
-- [Custom Box Model](examples/custom-box-model)
-- [Custom Player Model](examples/koopa-player-model)
-- [Moonjump](examples/Moonjump.lua)
-- [Instant Clip](examples/instant-clip.lua)
-- [Water Height Changer](examples/water-level.lua)
-- [Custom Level](examples/custom-level)
-- [Custom HUD Texture](examples/custom-hud-texture)
-- [Custom Audio Test](examples/audio-test)
-- [Custom Texture Overriding](examples/texture-override)
-- [Custom Animations (DynOS)](examples/custom-animations-dynos)
-- [Custom Animations (Lua)](examples/custom-animations-lua)
-- [Bytestring Packet Example](examples/bytestring-packet-example.lua)
-- [Gfx/Vtx Demo](examples/gfx-vtx-demo)
-- [Lighting Engine Demo](examples/lighting-engine-demo)
-
-## Example Lua mods (large)
-- [Hide and Seek Gamemode](../../mods/hide-and-seek.lua)
+!!! info
+    Want some examples mods to go off of? Head over to [here](https://github.com/coop-deluxe/sm64coopdx/tree/main/docs/lua/examples) to see a list of example mods!
