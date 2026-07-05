@@ -1,0 +1,34 @@
+# BehaviorTrajectories
+
+| Field | Type | Access |
+| ----- | ---- | ------ |
+| KoopaBobTrajectory | `Pointer` <`Trajectory`> |  |
+| KoopaThiTrajectory | `Pointer` <`Trajectory`> |  |
+| UnagiTrajectory | `Pointer` <`Trajectory`> |  |
+| Unagi2Trajectory | `Pointer` <`Trajectory`> |  |
+| SnowmanHeadTrajectory | `Pointer` <`Trajectory`> |  |
+| RacingPenguinTrajectory | `Pointer` <`Trajectory`> |  |
+| BowlingBallBobTrajectory | `Pointer` <`Trajectory`> |  |
+| BowlingBallBob2Trajectory | `Pointer` <`Trajectory`> |  |
+| BowlingBallTtmTrajectory | `Pointer` <`Trajectory`> |  |
+| BowlingBallThiLargeTrajectory | `Pointer` <`Trajectory`> |  |
+| BowlingBallThiSmallTrajectory | `Pointer` <`Trajectory`> |  |
+| MipsTrajectory | `Pointer` <`Trajectory`> |  |
+| Mips2Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips3Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips4Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips5Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips6Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips7Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips8Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips9Trajectory | `Pointer` <`Trajectory`> |  |
+| Mips10Trajectory | `Pointer` <`Trajectory`> |  |
+| PlatformRrTrajectory | `Pointer` <`Trajectory`> |  |
+| PlatformRr2Trajectory | `Pointer` <`Trajectory`> |  |
+| PlatformRr3Trajectory | `Pointer` <`Trajectory`> |  |
+| PlatformRr4Trajectory | `Pointer` <`Trajectory`> |  |
+| PlatformCcmTrajectory | `Pointer` <`Trajectory`> |  |
+| PlatformBitfsTrajectory | `Pointer` <`Trajectory`> |  |
+| PlatformHmcTrajectory | `Pointer` <`Trajectory`> |  |
+| PlatformLllTrajectory | `Pointer` <`Trajectory`> |  |
+| PlatformLll2Trajectory | `Pointer` <`Trajectory`> |  |

@@ -1,0 +1,30 @@
+# StarPositions
+
+| Field | Type | Access |
+| ----- | ---- | ------ |
+| KoopaBobStarPos | [Vec3f](Vec3f.md) | read-only |
+| KoopaThiStarPos | [Vec3f](Vec3f.md) | read-only |
+| KingBobombStarPos | [Vec3f](Vec3f.md) | read-only |
+| KingWhompStarPos | [Vec3f](Vec3f.md) | read-only |
+| EyerockStarPos | [Vec3f](Vec3f.md) | read-only |
+| BigBullyStarPos | [Vec3f](Vec3f.md) | read-only |
+| ChillBullyStarPos | [Vec3f](Vec3f.md) | read-only |
+| BigPiranhasStarPos | [Vec3f](Vec3f.md) | read-only |
+| TuxieMotherStarPos | [Vec3f](Vec3f.md) | read-only |
+| WigglerStarPos | [Vec3f](Vec3f.md) | read-only |
+| PssSlideStarPos | [Vec3f](Vec3f.md) | read-only |
+| RacingPenguinStarPos | [Vec3f](Vec3f.md) | read-only |
+| TreasureJrbStarPos | [Vec3f](Vec3f.md) | read-only |
+| TreasureChestStarPos | [Vec3f](Vec3f.md) | read-only |
+| GhostHuntBooStarPos | [Vec3f](Vec3f.md) | read-only |
+| KleptoStarPos | [Vec3f](Vec3f.md) | read-only |
+| MerryGoRoundStarPos | [Vec3f](Vec3f.md) | read-only |
+| MrIStarPos | [Vec3f](Vec3f.md) | read-only |
+| BalconyBooStarPos | [Vec3f](Vec3f.md) | read-only |
+| BigBullyTrioStarPos | [Vec3f](Vec3f.md) | read-only |
+| MantaRayStarPos | [Vec3f](Vec3f.md) | read-only |
+| SnowmanHeadStarPos | [Vec3f](Vec3f.md) | read-only |
+| CcmSlideStarPos | [Vec3f](Vec3f.md) | read-only |
+| UkikiCageStarPos | [Vec3f](Vec3f.md) | read-only |
+| UnagiStarPos | [Vec3f](Vec3f.md) | read-only |
+| JetstreamRingStarPos | [Vec3f](Vec3f.md) | read-only |

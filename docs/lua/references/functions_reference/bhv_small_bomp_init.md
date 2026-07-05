@@ -1,0 +1,17 @@
+
+## [bhv_small_bomp_init](#bhv_small_bomp_init)
+
+### Description
+Behavior init function for Small Bomp (Whomp's Fortress moving wall with eyes)
+
+### Lua Example
+`bhv_small_bomp_init()`
+
+### Parameters
+- None
+
+### Returns
+- None
+
+### C Prototype
+`void bhv_small_bomp_init(void);`
